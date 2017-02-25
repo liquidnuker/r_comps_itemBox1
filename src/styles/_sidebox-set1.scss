@@ -14,16 +14,15 @@ body {
   .sbox1-01 {
     // @extend %padd--4;
     margin-bottom: 6px; // optional bottom margin
+    button {
+      margin-top: 4px;
+    }
 
-  button {
-    margin-top: 4px;
-  }
-
-  .sbox1-01_img-holder {
-    height: 60px;
-    padding: 4px;
-    border: 1px solid #000;
-  }
+    .sbox1-01_img-holder {
+      height: 60px;
+      padding: 4px;
+      border: 1px solid #000;
+    }
   }
 }
 
@@ -33,10 +32,6 @@ body {
 // ==================================================/
 @mixin sbox1-02 {
   .sbox1-02 {
-    button {
-      margin-top: 4px; /*optional margin*/
-    }
-
     .sbox1-02_title {
       background-color: #666;
       padding: 4px;
