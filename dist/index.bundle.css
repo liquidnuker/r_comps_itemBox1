@@ -769,15 +769,13 @@ body {
 .sbox1-03 li {
   margin-bottom: 6px; }
 
-.sbox1-03 .sbox1-03_img-box > img {
-  margin-top: 4px; }
-
 .sbox1-03 .sbox1-03_title {
+  background-color: #666;
   padding: 4px; }
 
 .sbox1-03 .sbox1-03_itemlist > li {
   padding: 4px;
-  background-color: #666; }
+  background-color: #ccc; }
 
 .sbox1-03 .sbox1-03_itemlist_img-holder {
   display: block;
