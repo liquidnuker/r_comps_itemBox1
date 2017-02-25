@@ -748,11 +748,10 @@ body {
   margin-bottom: 6px; }
   .sbox1-01 button {
     margin-top: 4px; }
-
-.sbox1-01_img-holder {
-  height: 60px;
-  padding: 4px;
-  border: 1px solid #000; }
+  .sbox1-01 .sbox1-01_img-holder {
+    height: 60px;
+    padding: 4px;
+    border: 1px solid #000; }
 
 .sbox1-02 button {
   margin-top: 4px;
