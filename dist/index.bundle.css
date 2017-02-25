@@ -11,6 +11,9 @@ body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, field
   margin: 0;
   padding: 0; }
 
+.sbox1-01 {
+  padding: 4px; }
+
 body, p, blockquote, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, form, fieldset, legend, input, textarea, select {
   margin: 0;
   padding: 0; }
@@ -743,6 +746,16 @@ body {
 
 .item-id {
   background-color: #ccc; }
+
+.sbox1-01 {
+  margin-bottom: 6px; }
+  .sbox1-01 button {
+    margin-top: 4px; }
+
+.sbox1-01_imgholder {
+  height: 60px;
+  padding: 4px;
+  border: 1px solid #000; }
 
 body:before {
   background-color: #FCF8E3;

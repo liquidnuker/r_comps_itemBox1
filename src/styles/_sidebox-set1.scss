@@ -10,3 +10,20 @@ body {
 
 // sbox1-01
 // ==================================================/
+@mixin sbox1-01 {
+  .sbox1-01 {
+    @extend %padd--4;
+    margin-bottom: 6px; // optional bottom margin
+    button {
+      margin-top: 4px;
+    }
+  }
+
+  .sbox1-01_imgholder {
+    height: 60px;
+    padding: 4px;
+    border: 1px solid #000;
+  }
+}
+
+@include sbox1-01;
