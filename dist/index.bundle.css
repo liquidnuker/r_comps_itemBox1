@@ -766,6 +766,29 @@ body {
 .sbox1-02 button {
   margin-top: 4px; }
 
+.sbox1-03 li {
+  margin-bottom: 6px; }
+
+.sbox1-03 .sbox1-03_img-box > img {
+  margin-top: 4px; }
+
+.sbox1-03 .sbox1-03_title {
+  padding: 4px; }
+
+.sbox1-03 .sbox1-03_itemlist > li {
+  padding: 4px;
+  background-color: #666; }
+
+.sbox1-03 .sbox1-03_itemlist_img-holder {
+  display: block;
+  margin-top: 4px;
+  margin-right: 4px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  padding: 4px;
+  border: 1px solid #000; }
+
 body:before {
   background-color: #FCF8E3;
   border-bottom: 1px solid #FBEED5;
