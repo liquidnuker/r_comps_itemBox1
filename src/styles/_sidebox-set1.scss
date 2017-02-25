@@ -58,10 +58,6 @@ button {
 // ==================================================/
 @mixin sbox1-03 {
   .sbox1-03 {
-    li {
-      margin-bottom: 6px; 
-    }
-
     .sbox1-03_title {
       background-color: #666;
       padding: 4px;
@@ -71,7 +67,16 @@ button {
       > li {
         padding: 4px;
         background-color: #ccc;
+
+        &:nth-of-type(odd) {
+          background-color: #999;
+        }
       }
+
+      h4 {
+        display: inline-block;
+      }
+
     }
 
     .sbox1-03_itemlist_img-holder {
