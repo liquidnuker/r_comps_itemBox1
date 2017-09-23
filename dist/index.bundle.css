@@ -31,13 +31,13 @@ input [type="button"],
   margin: 0;
   padding: 0; }
 
-.itemBox101 .itemBox101_heading ~ p, .itemBox102 button {
+.itemBox101 .itemBox101_heading ~ p {
   margin-top: 4px; }
 
-.btn1-01, .itemBox101, .itemBox101 .itemBox101_img-holder, .itemBox102 .itemBox102_title {
+.btn1-01, .itemBox101, .itemBox101 .itemBox101_img-holder, .itemBox102, .itemBox102 .itemBox102_heading1 {
   padding: 4px; }
 
-.itemBox101 .itemBox101_btn-holder {
+.itemBox101 .itemBox101_btn-holder, .itemBox102 .itemBox102_btn-holder {
   padding-top: 4px; }
 
 *,
@@ -829,8 +829,15 @@ input [type="button"],
   height: 60px;
   border: 1px solid #000; }
 
-.itemBox102 .itemBox102_title {
+.itemBox102 .itemBox102_heading1 {
   background-color: #666; }
+
+.itemBox102 .itemBox102_heading2 {
+  margin: 4px 0 4px 0;
+  /* trbl */ }
+
+.itemBox102 .itemBox102_heading2 ~ p {
+  line-height: 114%; }
 
 .itemBox102 .itemBox102_img-holder > img {
   border: 1px solid #000;

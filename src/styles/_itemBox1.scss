@@ -56,10 +56,27 @@
 
 // itemBox102
 // ==================================================/
+@mixin itemBox102_theme() {
+  .itemBox102 {
+
+  }
+}
+@include itemBox102_theme();
+
 .itemBox102 {
-  .itemBox102_title {
+  @extend %padd--4;
+
+  .itemBox102_heading1 {
     @extend %padd--4;
     background-color: #666;
+  }
+
+  .itemBox102_heading2 {
+    margin: 4px 0 4px 0; /* trbl */
+  }
+
+  .itemBox102_heading2 ~ p {
+    line-height: 114%;
   }
 
   .itemBox102_img-holder {
@@ -71,7 +88,11 @@
     }
   }
 
-  button {
-    @extend %margin-top--4;
+  .itemBox102_btn-holder {
+    @extend %padd-top--4;
+    
+    button {
+      
+    }
   }
 }
