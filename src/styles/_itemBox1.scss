@@ -1,99 +1,37 @@
-// 
+// itemBox101
 // ==================================================/
-body {
-  @extend %system_normal--400;
-}
+.itemBox101 {
+  margin-bottom: 6px; 
+  
+  button {
+    margin-top: 4px;
+  }
 
-h1 {
-  display: none;
-}
-
-.item-id {
-  background-color: #ccc;
-}
-
-// sbox1-01
-// ==================================================/
-@mixin sbox1-01 {
-  .sbox1-01 {
-// @extend %padd--4;
-margin-bottom: 6px; // optional bottom margin
-button {
-  margin-top: 4px;
-}
-
-.sbox1-01_img-holder {
-  height: 60px;
-  padding: 4px;
-  border: 1px solid #000;
-}
-}
-}
-
-@include sbox1-01;
-
-// sbox1-02
-// ==================================================/
-@mixin sbox1-02 {
-  .sbox1-02 {
-    .sbox1-02_title {
-      background-color: #666;
-      padding: 4px;
-    }
-
-    .sbox1-02_img-holder {
-      > img {
-        display: block;
-        border: 1px solid #000;
-        height: 60px;
-        margin-top: 4px;
-      }
-    }
-
-    button {
-      margin-top: 4px;
-    }
+  .itemBox101_img-holder {
+    @extend %padd--4;
+    height: 60px;
+    border: 1px solid #000;
   }
 }
 
-@include sbox1-02;
-
-// sbox1-03
+// itemBox102
 // ==================================================/
-@mixin sbox1-03 {
-  .sbox1-03 {
-    .sbox1-03_title {
-      background-color: #666;
-      padding: 4px;
-    }
+.itemBox102 {
+  .itemBox102_title {
+    @extend %padd--4;
+    background-color: #666;
+  }
 
-    .sbox1-03_itemlist {
-      > li {
-        padding: 4px;
-        background-color: #ccc;
-
-        &:nth-of-type(odd) {
-          background-color: #999;
-        }
-      }
-
-      h4 {
-        display: inline-block;
-      }
-
-    }
-
-    .sbox1-03_itemlist_img-holder {
-      display: block;
-      margin-top: 4px;
-      margin-right: 4px;
-      float: left;
-      width: 60px;
-      height: 60px;
-      padding: 4px;
+  .itemBox102_img-holder {
+    > img {
+      @extend %display--block;
       border: 1px solid #000;
+      height: 60px;
+      margin-top: 4px;
     }
   }
-}
 
-@include sbox1-03;
+  button {
+    @extend %margin-top--4;
+  }
+}
