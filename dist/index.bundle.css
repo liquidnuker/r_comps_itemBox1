@@ -31,11 +31,14 @@ input [type="button"],
   margin: 0;
   padding: 0; }
 
-.itemBox102 button {
+.itemBox101 .itemBox101_heading ~ p, .itemBox102 button {
   margin-top: 4px; }
 
-.btn1-01, .itemBox101 .itemBox101_img-holder, .itemBox102 .itemBox102_title {
+.btn1-01, .itemBox101, .itemBox101 .itemBox101_img-holder, .itemBox102 .itemBox102_title {
   padding: 4px; }
+
+.itemBox101 .itemBox101_btn-holder {
+  padding-top: 4px; }
 
 *,
 *:before,
@@ -800,13 +803,31 @@ input [type="button"],
   .col-lg-1 {
     width: 8.33333333%; } }
 
-.itemBox101 {
-  margin-bottom: 6px; }
-  .itemBox101 button {
-    margin-top: 4px; }
-  .itemBox101 .itemBox101_img-holder {
-    height: 60px;
-    border: 1px solid #000; }
+.itemBox101 .itemBox101_img-holder {
+  border: 1px solid #000; }
+
+.itemBox101 .itemBox101_heading + hr {
+  color: #5c5d60;
+  /* old IE */
+  background-color: #5c5d60;
+  /* Modern Browsers */ }
+
+.itemBox101 .itemBox101_heading {
+  margin: 4px 0 4px 0;
+  /* trbl */ }
+
+.itemBox101 .itemBox101_heading + hr {
+  border: none;
+  height: 1px;
+  margin: 0; }
+
+.itemBox101 .itemBox101_heading ~ p {
+  line-height: 114%;
+  /* most browsers is about 110% to 120% */ }
+
+.itemBox101 .itemBox101_img-holder {
+  height: 60px;
+  border: 1px solid #000; }
 
 .itemBox102 .itemBox102_title {
   background-color: #666; }

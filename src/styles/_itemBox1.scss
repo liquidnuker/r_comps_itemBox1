@@ -1,12 +1,52 @@
 // itemBox101
 // ==================================================/
+@mixin itemBox101_theme() {
+  .itemBox101 {
+    .itemBox101_img-holder {
+      border: 1px solid #000;
+    }
+
+    .itemBox101_heading {
+      // background-color: #000;
+    }
+
+    .itemBox101_heading + hr {
+      color: #5c5d60; /* old IE */
+      background-color: #5c5d60; /* Modern Browsers */
+    }
+
+    .itemBox101_heading ~ p {
+      // color: #000;
+    }
+  }
+}
+@include itemBox101_theme();
+
 .itemBox101 {
-  margin-bottom: 6px; 
-  
-  button {
-    margin-top: 4px;
+  @extend %padd--4;
+  .itemBox101_heading {
+    margin: 4px 0 4px 0; /* trbl */
+    // @extend %padd--4;
   }
 
+  .itemBox101_heading + hr {
+    border: none;
+    height: 1px;
+    margin: 0;
+  }
+
+  .itemBox101_heading ~ p {
+    @extend %margin-top--4;
+    line-height: 114%; /* most browsers is about 110% to 120% */
+  }
+
+  .itemBox101_btn-holder {
+    @extend %padd-top--4;
+    button {
+      
+    }
+  }
+  
   .itemBox101_img-holder {
     @extend %padd--4;
     height: 60px;
