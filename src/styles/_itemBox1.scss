@@ -69,7 +69,32 @@
 // ==================================================/
 @mixin itemBox102_theme() {
   .itemBox102 {
+    background-color: #2a2a2d;
+    color: #d5d5d5;
 
+    .itemBox102_heading1 {
+      background-color: #343437;
+      color: #fff;
+    }
+
+    .itemBox102_heading2 {
+      color: #fff;
+    }
+
+    .itemBox102_img-holder {
+      border: 1px solid #5c5d60;
+      > img {
+        // border: 1px solid #000;
+      }
+    }
+
+    .itemBox102_btn-holder {
+      button {
+        &:hover {
+          background-color: #f6f6f6;
+        }
+      }
+    }
   }
 }
 @include itemBox102_theme();
@@ -78,8 +103,8 @@
   @extend %padd--4;
 
   .itemBox102_heading1 {
-    @extend %padd--4;
-    background-color: #666;
+    padding: 4px 0px 4px 0px; /* trbl */
+    @extend %margin-bottom--4;
   }
 
   .itemBox102_heading2 {
@@ -91,9 +116,9 @@
   }
 
   .itemBox102_img-holder {
+    @extend %padd--4;
     > img {
       @extend %display--block;
-      border: 1px solid #000;
       height: 60px;
       margin-top: 4px;
     }
@@ -103,7 +128,7 @@
     @extend %padd-top--4;
     
     button {
-      
+      cursor: pointer;
     }
   }
 }
