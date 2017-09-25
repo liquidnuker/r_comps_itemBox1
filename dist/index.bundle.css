@@ -803,14 +803,20 @@ input [type="button"],
   .col-lg-1 {
     width: 8.33333333%; } }
 
-.itemBox101 .itemBox101_img-holder {
-  border: 1px solid #000; }
-
-.itemBox101 .itemBox101_heading + hr {
-  color: #5c5d60;
-  /* old IE */
-  background-color: #5c5d60;
-  /* Modern Browsers */ }
+.itemBox101 {
+  background-color: #2a2a2d;
+  color: #d5d5d5; }
+  .itemBox101 .itemBox101_img-holder {
+    border: 1px solid #5c5d60; }
+  .itemBox101 .itemBox101_heading {
+    color: #fff; }
+  .itemBox101 .itemBox101_heading + hr {
+    color: #5c5d60;
+    /* old IE */
+    background-color: #5c5d60;
+    /* Modern Browsers */ }
+  .itemBox101 .itemBox101_btn-holder button:hover {
+    background-color: #f6f6f6; }
 
 .itemBox101 .itemBox101_heading {
   margin: 4px 0 4px 0;
@@ -825,9 +831,11 @@ input [type="button"],
   line-height: 114%;
   /* most browsers is about 110% to 120% */ }
 
+.itemBox101 .itemBox101_btn-holder button {
+  cursor: pointer; }
+
 .itemBox101 .itemBox101_img-holder {
-  height: 60px;
-  border: 1px solid #000; }
+  height: 60px; }
 
 .itemBox102 .itemBox102_heading1 {
   background-color: #666; }

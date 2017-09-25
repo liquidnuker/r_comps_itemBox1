@@ -2,12 +2,15 @@
 // ==================================================/
 @mixin itemBox101_theme() {
   .itemBox101 {
+    background-color: #2a2a2d;
+    color: #d5d5d5;
+
     .itemBox101_img-holder {
-      border: 1px solid #000;
+      border: 1px solid #5c5d60;
     }
 
     .itemBox101_heading {
-      // background-color: #000;
+      color: #fff;
     }
 
     .itemBox101_heading + hr {
@@ -17,6 +20,15 @@
 
     .itemBox101_heading ~ p {
       // color: #000;
+    }
+
+    .itemBox101_btn-holder {
+       button {
+        
+        &:hover {
+          background-color: #f6f6f6;
+        }
+      }
     }
   }
 }
@@ -43,14 +55,13 @@
   .itemBox101_btn-holder {
     @extend %padd-top--4;
     button {
-      
+      cursor: pointer;
     }
   }
   
   .itemBox101_img-holder {
     @extend %padd--4;
     height: 60px;
-    border: 1px solid #000;
   }
 }
 
